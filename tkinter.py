@@ -239,3 +239,20 @@ plt.ylabel("salary(Thousand Naira)")
 plt.show()
 
 print(df)
+
+import pandas as pd 
+import numpy as np
+import matplotlib.pyplot as plt 
+
+data= {'name':['shyllon', 'dennis', 'ofe', 'fola'], 'class':['ss3a','ss3a','ss3a','ss3a']}
+
+score=(95, 75,89,72)
+index= ('1','2','3','4')
+
+df= pd.DataFrame(data, index)
+
+plt.plot(index, score)
+plt.xlabel("students")
+plt.ylabel("Exam scores")
+
+print(df)
