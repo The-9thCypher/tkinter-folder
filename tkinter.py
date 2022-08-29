@@ -302,3 +302,16 @@ data=  pd.read_json('myfirstjsonfile.json')
 
 data=pd.DataFrame(data)
 print(data)
+
+#importing data into and from an sql database which for some reason isnt working 
+# import pandas as pd 
+# from sqlalchemy import create_engine
+
+# data=  pd.read_csv('myfirstcsvfile.txt')
+# data=pd.DataFrame(data)
+
+# engine= create_engine('sqlite:///:tkinter folder:')
+
+# data.to_sql('data_table', engine)
+# res1 = pd.read_sql_query('SELECT * FROM data_table',engine)
+# print('Resullt 1')
