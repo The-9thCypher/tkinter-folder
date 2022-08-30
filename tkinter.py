@@ -315,3 +315,13 @@ print(data)
 # data.to_sql('data_table', engine)
 # res1 = pd.read_sql_query('SELECT * FROM data_table',engine)
 # print('Resullt 1')
+
+filename = 'NUESA-SERVER-DETAILS.txt'
+
+with open(filename) as fn:
+    ln= fn.readline()
+    lncnt = 1
+    while ln:
+        print("line {}: {} ".format(lncnt,ln.strip()))
+        ln= fn.readline()
+        lncnt+=1
