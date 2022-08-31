@@ -325,3 +325,14 @@ with open(filename) as fn:
         print("line {}: {} ".format(lncnt,ln.strip()))
         ln= fn.readline()
         lncnt+=1
+
+import nltk 
+
+from nltk.stem.porter import PorterStemmer
+porter_stemmmer = PorterStemmer()
+
+word_data = 'it originated from the idea that there are readers who prefer learning new skills from the comforts of their drawing rooms '  
+
+nltk_tokens = nltk.word_tokenize(word_data)
+for w in nltk_tokens:
+    print(w, porter_stemmmer.stem(w))
