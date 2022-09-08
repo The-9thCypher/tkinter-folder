@@ -268,8 +268,9 @@
 # print(df.fillna(method='pad'))
 
 
-import pandas as pd 
-import numpy as np 
+import numpy as np
+import pandas as pd
+
 df= pd.DataFrame(np.random.randn(5,3),
 index=['a','c','e','f','h'], columns=['one','two','three'])
 
@@ -277,9 +278,10 @@ df=df.reindex(['a','b','c','d','e','f','g','h'])
 
 print(df.dropna())
 
-import pandas as pd 
+import matplotlib.pyplot as plt
 import numpy as np
-import matplotlib.pyplot as plt 
+import pandas as pd
+
 df= pd.DataFrame(np.random.randn(5,3),
 index=['a','c','e','f','h'], columns=['one','two','three'])
 
@@ -289,14 +291,14 @@ print(df.dropna())
 
 plt.plot(df)
 
-import pandas as pd 
+import pandas as pd
 
 data=  pd.read_csv('myfirstcsvfile.txt')
 
 data=pd.DataFrame(data)
 print(data)
 
-import pandas as pd 
+import pandas as pd
 
 data=  pd.read_json('myfirstjsonfile.json')
 
@@ -326,9 +328,9 @@ with open(filename) as fn:
         ln= fn.readline()
         lncnt+=1
 
-import nltk 
-
+import nltk
 from nltk.stem.porter import PorterStemmer
+
 porter_stemmmer = PorterStemmer()
 
 word_data = 'it originated from the idea that there are readers who prefer learning new skills from the comforts of their drawing rooms '  
