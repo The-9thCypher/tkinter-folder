@@ -338,3 +338,15 @@ word_data = 'it originated from the idea that there are readers who prefer learn
 nltk_tokens = nltk.word_tokenize(word_data)
 for w in nltk_tokens:
     print(w, porter_stemmmer.stem(w))
+
+
+
+import numpy as np 
+import pandas as pd 
+
+df = {'Host city': ['London', 'Beijng', 'Athens', 'Sedney', 'Atlanta'], 'Year': ['2012', '2008', '2004', '2000', '1996'], 'No of participating countries': ['204', '205', '201', '200', '197'] 
+}
+
+df= pd.DataFrame(df)
+
+print(df)
