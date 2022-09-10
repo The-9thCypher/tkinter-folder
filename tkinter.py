@@ -341,7 +341,7 @@ for w in nltk_tokens:
 
 
 
-import numpy as np 
+import numpy as 
 import pandas as pd 
 
 df = {'Host city': ['London', 'Beijng', 'Athens', 'Sedney', 'Atlanta'], 'Year': ['2012', '2008', '2004', '2000', '1996'], 'No of participating countries': ['204', '205', '201', '200', '197'] 
