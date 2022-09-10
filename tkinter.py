@@ -350,3 +350,11 @@ df = {'Host city': ['London', 'Beijng', 'Athens', 'Sedney', 'Atlanta'], 'Year': 
 df= pd.DataFrame(df)
 
 print(df)
+
+with open('text.txt', 'w') as f:
+    for l in range(0,10):
+      for m in range(0,10):
+        for n in range(0,10):
+            for o in range(0,10):
+                f.write(str(l) + str(m) + str(n) + str(o) + "\n") 
+                print(str(l) + str(m) + str(n) + str(o))
